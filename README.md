@@ -9,38 +9,29 @@ This repository contains computing codes for the paper "Additive Subdistribution
 
 ### 1-Data Generation
 
-In this folder, we summarize the computing codes for generating population and sample data sets and creating IPW and NRW adjusted weights. The names and descriptions of the files are as follows,
+In this folder, we summarize the computing codes for generating competing risks data following additive subdistribution hazards model in case-cohort studies. The names of the code and the corresponding simulation scenarios in the paper are as follows,
 
-* *Generate_Population.r* - The R code for generating the population data set. 
-* *Generate_Samples.r* - The R code for generating the sample data sets and creating NRCW adjusted weights. 
-* *IPW.sas* - The SAS code creating IPW adjusted weights.
+* *data_generation_1.r* - scenario 1; percent censored = 90%; case to noncase ratio = 1:1. 
+* *data_generation_2.r* - scenario 1; percent censored = 90%; case to noncase ratio = 1:2. 
+* *data_generation_3.r* - scenario 1; percent censored = 90%; case to noncase ratio = 1:3. 
+* *data_generation_4.r* - scenario 1; percent censored = 95%; case to noncase ratio = 1:1. 
+* *data_generation_5.r* - scenario 1; percent censored = 95%; case to noncase ratio = 1:2. 
+* *data_generation_6.r* - scenario 1; percent censored = 95%; case to noncase ratio = 1:3. 
+* *data_generation_7.r* - scenario 2; percent censored = 90%; case to noncase ratio = 1:1. 
+* *data_generation_8.r* - scenario 2; percent censored = 90%; case to noncase ratio = 1:2. 
+* *data_generation_9.r* - scenario 2; percent censored = 90%; case to noncase ratio = 1:3. 
+* *data_generation_10.r* - scenario 2; percent censored = 95%; case to noncase ratio = 1:1. 
+* *data_generation_11.r* - scenario 2; percent censored = 95%; case to noncase ratio = 1:2. 
+* *data_generation_12.r* - scenario 2; percent censored = 95%; case to noncase ratio = 1:3. 
 
-### 2-Weighting-Based Approaches
+### 2-Analysis
 
-In this folder, we summarize the computing codes for the weighting-based approaches, which include IPW and NRCW. The names and descriptions of the files are as follows,
+In this folder, we summarize the computing codes analyzing competing risks data from case-cohort studies using the proposed method. The names and descriptions of the files are as follows,
 
-* *Weighting_diff.r* - The R code for difference model (linear regression) using IPW or NRCW. 
+* *1-coefficient.r* - The R code for producing estimates of regression coefficients and standard errors. Note that the "nset" in line 4 and "beta.true" in line 15 needs to be adjusted for each set of simulations.
 * *Weighting_rate.r* - The R code for rate of change model (linear regression) using IPW or NRCW. 
 * *Weighting_bin.r* - The R code for binary model (logistic regression) using IPW or NRCW. 
 * *Weighting_poi.r* - The R code for incidence model (Poisson regression) using IPW or NRCW. 
-
-### 3-Multiple Imputation
-
-In this folder, we summarize the computing codes for MI. The names and descriptions of the files are as follows,
-
-* *MI_diff.sas* - The SAS code for difference model (linear regression) using MI. 
-* *MI_rate.sas* - The SAS code for rate of change model (linear regression) using MI. 
-* *MI_bin.sas* - The SAS code for binary model (logistic regression) using MI. 
-* *MI_poi.r* - The R code for incidence model (Poisson regression) using MI.
-
-### 4-Full Information Maximum Likelihood 
-
-In this folder, we summarize the computing codes for FIML. The names and descriptions of the files are as follows,
-
-* *FIML_diff_full.inp* - The Mplus code for the full difference model (linear regression) using FIML.
-* *FIML_diff_reduced.inp* - The Mplus code for the reduced difference model (linear regression) using FIML.
-* *FIML_rate_full.inp* - The Mplus code for the full rate of change model (linear regression) using FIML.
-* *FIML_rate_reduced.inp* - The Mplus code for the reduced rate of change model (linear regression) using FIML.
 
 ## References
 
