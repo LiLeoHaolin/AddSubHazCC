@@ -28,8 +28,8 @@ In this folder, we summarize the computing codes for generating competing risks 
 
 In this folder, we summarize the computing codes analyzing competing risks data from case-cohort studies using the proposed method. The names and descriptions of the files are as follows,
 
-* *1-coefficient.r* - The R code for producing estimates of regression coefficients and standard errors. Note that the "nset" in line 4 and "beta.true" in line 15 needs to be adjusted for each set of simulations.
-* *Weighting_rate.r* - The R code for rate of change model (linear regression) using IPW or NRCW. 
+* *1-coefficient.r* - The R code for producing estimates of regression coefficients and standard errors. Note that the "nset" in line 4 (index of simulation scenario) and "beta.true" in line 15 (true values of regression coefficients) need to be adjusted for each set of simulations. The outputs will include 3 datasets: (1) "beta_hat_cum_nset.csv" is a collection of estimated regression coefficients for all simulations; (2) "se_cum_nset.csv" is a collection of estimated standard error for all simulations; and (3) "cov_cum_nset.csv" is a collection of indicators of whether the 95% confidence intervals cover the true values in all simulations.
+* *2-CBSH.r* - The R code for producing estimated cumulative baseline subdistribution hazard function and its corresponding pointwise confidence intervals. Note that the "nset" in line 4 (index of simulation scenario) needs to be adjusted for each set of simulations. The code will output one dataset called "info_cum_sub_h_k.csv" for each simulation, which contains 4 variables: (1) "time.pt" is the time variable; (2) "est" is the estimated cumulative baseline subdistribution function; (3) "lower" is the lower bound of the 95% confidence interval of the cumulative baseline subdistribution function; and (4) "upper" is the upper bound of the 95% confidence interval of the cumulative baseline subdistribution function. 
 * *Weighting_bin.r* - The R code for binary model (logistic regression) using IPW or NRCW. 
 * *Weighting_poi.r* - The R code for incidence model (Poisson regression) using IPW or NRCW. 
 
