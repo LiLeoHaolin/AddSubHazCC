@@ -3,7 +3,7 @@
 
 ## Description
 
-This repository contains computing codes for the paper "Additive Subdistribution Hazards Regression for Competing Risks Data in Case-Cohort Studies". Please click [here](https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.13821) for the full text of the paper. For questions or suggestions about the computing codes, please send an email to Leo Haolin Li at haolin@live.unc.edu.
+This repository contains computing codes for the paper "Additive Subdistribution Hazards Regression for Competing Risks Data in Case-Cohort Studies". Please click [here](https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.13821) for the full text of the paper. 
 
 ## Folders 
 
