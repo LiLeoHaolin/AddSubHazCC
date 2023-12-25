@@ -35,4 +35,4 @@ In this folder, we summarize the computing codes analyzing competing risks data 
 
 ## References
 
-Wogu, A. F., Li, H., Zhao, S., Nichols, H. B., Cai, J. (2022+). Additive Subdistribution Hazards Regression for Competing Risks Data in Case-Cohort Studies. Manuscript Submitted for Publication.
+Wogu, A. F., Li, H., Zhao, S., Nichols, H. B., & Cai, J. (2023). Additive subdistribution hazards regression for competing risks data in case-cohort studies. Biometrics, 79(4), 3010–3022.
