@@ -1,4 +1,4 @@
-# Computing Codes for the Paper "Additive Subdistribution Hazards Regression for Competing Risks Data in Case-Cohort Studies"
+# Computing Code for the Paper "Additive Subdistribution Hazards Regression for Competing Risks Data in Case-Cohort Studies"
 ### Adane F. Wogu, Haolin Li, Shanshan Zhao, Hazel B. Nichols, and Jianwen Cai
 
 ## Description
